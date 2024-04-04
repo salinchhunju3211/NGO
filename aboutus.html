@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Website</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   
+    <style>
+
+        .navbar-brand img {
+            max-height: 40px;
+            max-width: 150px;
+        }
+        #about {
+            padding: 50px 0;
+        }
+        #about .container {
+            text-align: center;
+        }
+        #about h2 {
+            color: #333;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        #about p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+       
+        #team {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+        }
+        #team h3 {
+            color: #333;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .team-member img {
+            max-width: 150px;
+          
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .team-member h4 {
+            color: #333;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .team-member p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        #contact {
+    background-color: #f0f8ff; /* Light blue color */
+    padding: 50px 0;
+    text-align: center;
+}
+#contact h2 {
+    color: #333;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.contact-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.contact-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-card .details {
+    display: none;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555; 
+}
+.contact-card:hover .details {
+    display: block;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+  }
+  .footer-logo {
+    width: 100px;
+  }
+  .footer-contact-details {
+    margin-bottom: 20px;
+  }
+  .footer-links a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .footer-links a:hover {
+    color: #ffc107;
+  }
+  .footer-links a:last-child {
+    margin-right: 0;
+  }
+  .footer-social {
+    margin-top: 20px;
+  }
+  .footer-social a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .footer-social a:hover {
+    background-color: #ffc107;
+    color: #333;
+  }
+       
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="container">
+            <a class="navbar-brand d-flex" href="#">
+                <img src="logo.jpg" alt="NGO Logo">
+                <div class="align-self-center">
+                    <h3 class="text-white ms-2"><i>GIVE NEPAL</i></h3>
+                </div>
+             
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="programms.html">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="donate.html">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="team">
+        <div class="container">
+            <h3>Our Team</h3>
+            <p>Established in 1987, GIVE NEPAL is a pioneer child rights organization in Nepal. GIVE-Nepal is an advocacy organization for child's rights with a focus on children living and working under the most difficult circumstances</p>
+            <p>GIVE NEPAL-Nepal addresses all the critical child rights and child protection issues that include child labor exploitation, abandonment and neglect, sexual exploitation, lack of access to quality education and training, lack of access to quality healthcare, including mental healthcare; trafficking and online child abuse. GIVE NEPAL-Nepal carries out mass awareness on child rights, conducts policy advocacy towards making government institutions more responsive and accountable to Nepal’s children for the realization of their rights and overall development.
+
+                GIVE NEPAL-Nepal builds partnerships with children and their associations, national alliances, international agencies and movements, government agencies and the private sector to bring the issue of child rights into a national agenda. It has a legacy of ensuring children’s direct participation in national and international policies and issues concerning their rights including giving inputs to the new constitution of Nepal. GIVE NEPAL- Nepal has been facilitating the National Adolescent Girls Network and National Adolescent Boys Network which has members from all the 77 districts of Nepal’s seven provinces. Likewise, GIVE NEPAL empowers and mobilizes adolescents and young people to become Peer Educators, Facilitators or Social Mobilisers for peer support. During the Covid-19 Pandemic, it has oriented young people on online safety and mobilized 1500 adolescents on the online platform to provide emotional and psycho-social support, who have successfully reached out to 70,000 young people around the country.
+                
+                GIVE NEPAL has been also undertaking a number of pioneering child development and protection services including the Child Helpline 1098, transit centres, self-reliance and empowerment of children. GIVE NEPAL has championed child and adolescent psychiatry and mental health issues in 2015 by initiating Nepal’s first and only Child and Adolescent Psychiatry Unit at the Kanti Children’s Hospital, the only national children’s hospital in Nepal. GIVE NEPAL has in its team Nepal’s all three Child Psychiatrists. Together with Clinical Psychologists and Counsellors trained on child mental health, it has proudly reached out to more than 200,000 children and adolescents through the OPD service, online consultation support, first child mental health toll-free hotline number and child mental health outreach camps. GIVE NEPAL has now constructed a separate facility for Child Psychiatry and Mental health and will be starting Nepal’s first in-patient service for children. After the Covid-19 pandemic, GIVE NEPAL has been able to reach out to 170,000 children and their families with emergency good support, medical support, hygiene kits for adolescents and mental health support. Furthermore, GIVE NEPAL also ventured into uncharted territory by undertaking reconstruction work necessitated by the devastating earthquake of 2015; most notably, the construction of 20 schools in Dolakha.
+                
+                GIVE NEPAL has carried out and published research on various children’s issues including child labor, children in armed conflict, sexual exploitation of children, child mental health and online sexual abuse and exploitation, etc. GIVE NEPAL is the first organization in Nepal to initiate research, campaign and advocacy on sexual exploitation of children and online child protection.
+                
+                GIVE NEPAL also pioneered in the direct work with street-connected children for their dignity, empowerment and social reintegration and continues the work with the engagement of former street-connected children as peer educators. During the pandemic and lockdown, GIVE NEPAL provided direct support to more than 500 street-connected children and young people with emergency food support, medical care, supplies of sanitary utilities and after lobbying with the local government offices facilitated in vaccination of street-connected youth who do not have identity cards or citizenship cards. GIVE NEPAL is also actively engaged with Nepali civil society groups to voice for the right of children at risk to have birth certificates and citizenship cards.
+                
+                GIVE NEPAL has a track record of successful evidence-based advocacy on various child rights issues including the educational rights of children. It has extensive experience of working directly with schools for uplifting school performances, good governance, promoting schools as zones of peace and public ownership in school management and school reconstruction. It has been continually providing technical expertise to various agencies of the Government of Nepal (GON) to formulate policies and directives such as National Plan of Action for Holistic Development of Children and Adolescent Girls, 2013; National Policy on Adolescents Development and Regulations for the Government Declaration of Schools as Zones of Peace. It has also been providing technical support to the GoN to formulate and implement various policies and programs to promote public education, child mental health, child participation etc. It has helped to establish a national child protection mechanism such as the Child Helpline Nepal 1098. Furthermore, it has conducted and published hundreds of researches and studies on the different thematic areas. GIVE NEPAL has initiated the National Campaign for Education and many other CSO networks. GIVE NEPAL’s existing dynamic working relations with policymakers, local authorities, government agencies and civil society organizations (CSOs) will further enhance the capacities of target groups and final beneficiaries of the Action. GIVE NEPAL’s experience of advocacy and alliance building at the international level including participation in the UNGASS on Children/Drug/ SDG Forum, Alliance 8,7; civil society engagement in Universal Periodical Reporting (UPR), CEDAW, Beijing Platform for Action will provide an international perspective to the Action for its successful completion.
+                
+                With a transformed federal system, GIVE NEPAL has established its presence in all the seven provinces of Nepal through the Child Helpline Nepal 1098, which is the single comprehensive child protection mechanism in Nepal, which it runs in collaboration with the Ministry of Women, Children and Senior Citizens and the Nepal Telecom Authority. It runs direct interventions for minimization of all forms of abuse and exploitation, sexual exploitation including online harms, reducing child labor exploitation, socialization and empowerment of street-connected children and other children in distress. GIVE NEPAL also runs GIVE NEPAL Balika Peace Home and GIVE NEPAL Boy’s Transit Home for emergency transit shelter, empowerment and sustainable social reintegration of children at risk.
+                
+                It has fostered trust and a dynamic relation with both federal and provincial governments, CSOs and their networks and is also the founder and member of many networks on child rights and child protection such as the National Campaign for Education (NCE), Children as Zones of Peace and Protection (CZOPP), Alliance Against Trafficking in Women and Children (AATWIN), Consortium of Organizations Working with Child Participation, National Alliance of Organizations working with Street Children (NAOSC), National Alliance Coordinating Group(NACG-SAIEVAC). Most of these national alliances and networks were initiated by GIVE NEPAL. It is also a member of a wide range of international initiatives and networks such as ECPAT International, Global March, Global Campaign for Education (GCE), CRC-Asia, Child Helpline International, Aflatoun, Consortium for Street Children (CSC), Men Engage Alliance, etc.
+                
+                GIVE NEPAL-Nepal is leading the national alcohol policy in Nepal and is a national coordinator for Nepal Alcohol Policy Advocacy (NAPA). It is a member of the Global Alcohol Policy Alliance (GAPA), WFAD (World Federation Against Drugs), and Drugs Policy Futures and has participated in UNGASS on drugs policy and WHO alcohol prevention workshops. GIVE NEPAL-Nepal has integrated alcohol, tobacco and drugs as a development issue in its programmes of action in the communities and its direct work with children and young people.
+                
+                Every year, GIVE-Nepal reaches out to at least 100,000 children and young people through various projects and interventions. It provides direct support to 20,000 children from vulnerable situations for their protection, mental health support, legal support, education support, vocational training and family reunion and social reintegration.</p>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img class="img-fluid" src="ram.jpg" alt="Team Member 1">
+                        <h4>Ram Sharma</h4>
+                        <p>Co-Founder & CEO</p>
+                        <p>Qualifications: MBA in Business Administration</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img class="img-fluid" src="sita.jpg" alt="Team Member 2">
+                        <h4>Sita Rai</h4>
+                        <p>Co-Founder & CTO</p>
+                        <p>Qualifications: Master's in Computer Science</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team-member">
+                        <img class="img-fluid" src="hari.jpg" alt="Team Member 3">
+                        <h4>Hari Thapa</h4>
+                        <p>Head of Operations</p>
+                        <p>Qualifications: Bachelor's in Business Management</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-card">
+                        <img src="cont.jpg" alt="Contact Us">
+                        <h3>Contact Information</h3>
+                        <p>Phone: +123456789<br>Email: chhunjusalin007@gmail.com</p>
+                        <div class="details">
+                            <p>Feel free to reach out to us for any queries or assistance. We are available to answer your questions and provide support.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-card">
+                        <img src="contact.jpg" alt="Be a Volunteer">
+                        <h3>Be a Volunteer</h3>
+                        <p>Volunteering is a great way to make a difference in your community. Join us in our mission to create positive change.</p>
+                        <div class="details">
+                            <p>As a volunteer, you'll have the opportunity to participate in various programs and initiatives aimed at improving the lives of others.</p>
+                            <p>Contact us to learn more about volunteer opportunities and how you can get involved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="logo.jpg" alt="Your Logo" class="footer-logo">
+              <div class="footer-contact-details">
+                <p>Contact Us:</p>
+                <p>Email: example@example.com</p>
+                <p>Phone: +1234567890</p>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="programms.html">Programs</a>
+                <a href="donate.html">Donate</a>
+                <a href="#contact">Contact</a>
+              </div>
+              <div class="footer-social">
+                <a href="#" target="_blank"><img src="fb.png" alt="Facebook" width="40"></a>
+                <a href="#" target="_blank"><img src="twit.png" alt="Twitter" width="40"></a>
+                <a href="#" target="_blank"><img src="inst.jpg" alt="Instagram" width="40"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+ 
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>
